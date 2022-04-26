@@ -61,14 +61,14 @@ export default {
     // We use our backend server (which is on localhost:3000) to get data from the SCB API
     // Our specific "endpoint" for tätorter is /tatorter
     // We use the options object to specify it's a POST request, and that the type is JSON
-    fetch("http://localhost:3000/tatorter", options)
+    fetch("https://sverigedata-backend.herokuapp.com/tatorter", options)
     .then(response => response.json())
     .then(data => console.log(this.tatorterData = data))
     .catch(err => console.log(err.message))
     
     // GET is used to get the names of all towns
     // No options are needed for GET requests, GET is the default fetch method
-    fetch("http://localhost:3000/tatorter")
+    fetch("https://sverigedata-backend.herokuapp.com/tatorter")
     .then(response => response.json())
     .then(data => console.log(this.tatorterNames = data))
     .catch(err => console.log(err.message))

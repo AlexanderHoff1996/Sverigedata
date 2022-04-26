@@ -79,13 +79,13 @@ export default {
     .catch(err => console.log(err.message))
 
     // POST /kommuner/befolkning
-    fetch("http://localhost:3000/kommuner/befolkning", options)
+    fetch("https://sverigedata-backend.herokuapp.com/kommuner/befolkning", options)
     .then(response => response.json())
     .then(data => console.log(this.kommunerPopulation = data))
     .catch(err => console.log(err.message))
 
     // POST /kommuner/befolkningstathet
-    fetch("http://localhost:3000/kommuner/befolkningstathet", options)
+    fetch("https://sverigedata-backend.herokuapp.com/kommuner/befolkningstathet", options)
     .then(response => response.json())
     .then(data => console.log(this.kommunerPopulationDensity = data))
     .catch(err => console.log(err.message))

@@ -66,25 +66,25 @@ export default {
     }
 
     // POST /lan
-    fetch("http://localhost:3000/lan", options)
+    fetch("https://sverigedata-backend.herokuapp.com/lan", options)
     .then(response => response.json())
     .then(data => console.log(this.lanSize = data))
     .catch(err => console.log(err.message))
 
     // GET /lan
-    fetch("http://localhost:3000/lan")
+    fetch("https://sverigedata-backend.herokuapp.com/lan")
     .then(response => response.json())
     .then(data => console.log(this.lanNames = data))
     .catch(err => console.log(err.message))
 
     // POST /lan/befolkning
-    fetch("http://localhost:3000/lan/befolkning", options)
+    fetch("https://sverigedata-backend.herokuapp.com/lan/befolkning", options)
     .then(response => response.json())
     .then(data => console.log(this.lanPopulation = data))
     .catch(err => console.log(err.message))
 
     // POST /lan/befolkningstathet
-    fetch("http://localhost:3000/lan/befolkningstathet", options)
+    fetch("https://sverigedata-backend.herokuapp.com/lan/befolkningstathet", options)
     .then(response => response.json())
     .then(data => console.log(this.lanPopulationDensity = data))
     .catch(err => console.log(err.message))
