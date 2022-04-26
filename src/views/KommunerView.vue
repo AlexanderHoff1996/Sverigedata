@@ -67,7 +67,7 @@ export default {
     }
 
     // POST /kommuner
-    fetch("http://localhost:3000/kommuner", options)
+    fetch("https://sverigedata-backend.herokuapp.com/kommuner", options)
     .then(response => response.json())
     .then(data => console.log(this.kommunerSize = data))
     .catch(err => console.log(err.message))
