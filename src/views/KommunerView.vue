@@ -73,7 +73,7 @@ export default {
     .catch(err => console.log(err.message))
 
     // GET /kommuner
-    fetch("http://localhost:3000/kommuner")
+    fetch("https://sverigedata-backend.herokuapp.com/kommuner")
     .then(response => response.json())
     .then(data => console.log(this.kommunerNames = data))
     .catch(err => console.log(err.message))
