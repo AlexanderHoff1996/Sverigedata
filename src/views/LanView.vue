@@ -6,6 +6,9 @@
         <p>
           Sverige består av 21 län.
         </p>
+        <p id="missing-values-text">
+          Två prickar (..) betyder att värde saknas.
+        </p>
         <table v-if="lanNames && lanSize.data" id="lanTable">
           <thead>
             <tr>

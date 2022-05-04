@@ -7,7 +7,9 @@
           Det finns över 2000 tätorter i Sverige.
           Från små tätorter som Finsta och Runemo, med bara lite över 200 invånare,
           till Sveriges största tätorter som Stockholm, Göteborg, och Malmö.
-
+        </p>
+        <p id="missing-values-text">
+          Två prickar (..) betyder att värde saknas.
         </p>
 
         <!-- This HTML table will be populated with the data from the SCB API -->

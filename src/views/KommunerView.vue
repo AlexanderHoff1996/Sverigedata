@@ -7,6 +7,9 @@
           Det finns 290 kommuner i Sverige.<br>
           Från Trelleborgs kommun i söder, till Kirunas kommun i norr!
         </p>
+        <p id="missing-values-text">
+          Två prickar (..) betyder att värde saknas.
+        </p>
         <table v-if="kommunerNames && kommunerSize.data" id="kommunerTable">
           <thead>
             <tr>

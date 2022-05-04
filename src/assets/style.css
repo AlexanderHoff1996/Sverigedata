@@ -20,3 +20,8 @@ td, th {
 tr:nth-child(even) {
     background-color: #dddddd;
 }
+
+#missing-values-text {
+    font-size: 14px;
+    font-style: italic;
+}
