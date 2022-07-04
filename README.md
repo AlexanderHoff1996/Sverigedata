@@ -1,4 +1,4 @@
-# sverigedata
+# Sverigedata
 
 ## Project setup
 ```
